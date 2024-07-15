@@ -6,6 +6,7 @@ import { UsersModule } from './users/users.module';
 import { CommonsModule } from './commons/commons.module';
 import { PasswordHasherService } from './modules/password-hasher/password-hasher.service';
 import { JwtModule } from '@nestjs/jwt';
+import { PhylogeneticTreesPdfsModule } from './phylogenetic-trees-pdfs/phylogenetic-trees-pdfs.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { JwtModule } from '@nestjs/jwt';
     CommonsModule,
     PhylogeneticTreeScriptsModule,
     UsersModule,
+    PhylogeneticTreesPdfsModule,
   ],
   controllers: [AppController],
   providers: [AppService, PasswordHasherService],
